@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+  </head>
+  <body>
+    <h1>Formulaire</h1>
+    <H2>sans envoie de fichier </H2>
+    <form action="/blog" method="post">
+      <label for="author">Auteur :</label>
+      <input type="text" name="author" id="author" />
+    </form>
+    <H2>sans envoie de fichier </H2>
+
+    <form action="/blog" method="post" enctype="multipart/form-data">
+      <label for="image">Fichier :</label>
+      <input type="file" name="image" id="image" />
+    </form>
+  </body>
+</html>
